@@ -24,7 +24,7 @@
         [judge_win, judge_loose, judge_loose, judge_loose],
         [judge_loose, judge_win, judge_loose, judge_loose],
         [judge_loose, judge_loose, judge_win, judge_loose],
-        [, judge_loose, judge_loose, judge_loose, judge_win]
+        [ judge_loose, judge_loose, judge_loose, judge_win]
       ];
       // 勝敗結果表示用配列
       var judge_text = ["勝ち",  "負け"];
@@ -49,7 +49,7 @@
       }
 
       function hidari() {
-        janken(hand_pa);
+        janken(hand_hidari);
       }
 
       function migi(){
@@ -135,8 +135,8 @@
   <div class="mx-auto" style="width: 200px">
     <a onclick="ue();" class="btn btn-outline-primary hand" role="button">うえ</a>
     <a onclick="shita();" class="btn btn-outline-primary hand" role="button">した</a>
-    <a onclick="hidari();" class="btn btn-outline-primary hand" role="button">ひだり</a>
     <a onclick="migi();" class="btn btn-outline-primary hand" role="button">みぎ</a>
+    <a onclick="hidari();" class="btn btn-outline-primary hand" role="button">ひだり</a>
     <a onclick="newgame();" class="btn btn-info text-white" id="newgame" role="button">New Game</a>
   </div>
   <div id="result" class="text-white bg-secondary">
